@@ -13,7 +13,7 @@ import utils.URIUtils;
 public class UpdateSmokeTests {
 	
 	@Test
-	public void updatePost() {
+	public void updatePostTest() {
 		Map<String,String> postUpdateBody = PostsUtils.updatePost();
 		given()
 			.baseUri(URIUtils.getBaseUri())

@@ -6,10 +6,10 @@ import org.junit.Test;
 import utils.PostsUtils;
 import utils.URIUtils;
 
-public class PostsTests {
+public class PostsTest {
 	
 	@Test
-	 public void fetchSingleNotFound() {
+	 public void fetchSingleNotFoundTest() {
 		 given().
 		 	baseUri(URIUtils.getBaseUri()).
 		 when().
@@ -23,7 +23,7 @@ public class PostsTests {
 	
 	// Failing : API should return 404, not 200
 	@Test
-	 public void deleteSingleNotFound() {
+	 public void deleteSingleNotFoundTest() {
 		 given().
 		 	baseUri(URIUtils.getBaseUri()).
 		 when().

@@ -11,7 +11,7 @@ public class FetchSmokeTests {
 	
 		
 	@Test
-	 public void fetchList() {
+	 public void fetchListTest() {
 		 given().
 		 	baseUri(URIUtils.getBaseUri()).
 		    pathParam("resource", "posts").
@@ -32,7 +32,7 @@ public class FetchSmokeTests {
 	 }
 	
 	@Test
-	 public void fetchSingle() {
+	 public void fetchSingleTest() {
 		 given().
 		 	baseUri(URIUtils.getBaseUri()).
 		 	pathParam("resource", "posts").

@@ -10,7 +10,7 @@ public class DeleteSmokeTests {
 	// the API mocks a delete : in real scenario we would create a new resource, then delete it
 	
 	@Test
-	public void deletePost() {
+	public void deletePostTest() {
 		given()
 			.baseUri(URIUtils.getBaseUri())
 			.contentType("application/json").
