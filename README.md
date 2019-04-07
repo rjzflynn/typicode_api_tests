@@ -23,7 +23,7 @@ Test framework is REST Assured (http://rest-assured.io/) which is pretty much th
 
 JUnit and Maven are standards in the Java ecosystem.
 
-The bare-bones / smoke tests are all contained in the package typicode_tests.smokeTests.
+The bare-bones / smoke tests are all contained in the package typicode_tests.smokeTests
 
 This package contains tests for fetching , creating, updating and deleting all the resources available at http://jsonplaceholder.typicode.com/
 
