@@ -27,4 +27,4 @@ The bare-bones / smoke tests are all contained in the package typicode_tests.smo
 
 This package contains tests for fetching , creating, updating and deleting all the resources available at http://jsonplaceholder.typicode.com/
 
-Class typicode_tests.postsTests.PostsTest shows how I would begin to further build out the tests going into more compicayed assertations. There are two tests there for the /posts resource.
+Class typicode_tests.postsTests.PostsTest shows how I would begin to further build out the tests going into more complicated assertions. There are two tests there for the /posts resource.
