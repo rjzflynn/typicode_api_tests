@@ -1,0 +1,7 @@
+typicode_tests\smokeTests\CreateSmokeTests.class
+utils\PostsUtils.class
+typicode_tests\smokeTests\UpdateSmokeTests.class
+typicode_tests\smokeTests\DeleteSmokeTests.class
+typicode_tests\smokeTests\FetchSmokeTests.class
+typicode_tests\postsTests\PostsTests.class
+utils\URIUtils.class
