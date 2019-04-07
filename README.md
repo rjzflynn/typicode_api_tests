@@ -9,7 +9,7 @@ typicode_api_tests
 ---
 
 ##### Running the tests.
-From the root of the project commands:
+From project root run commands:
 
 * Run all tests and generate report `mvn site -DgenerateReports=false`
 * Run only smoke Tests `mvn -Dtest=*SmokeTests test`
