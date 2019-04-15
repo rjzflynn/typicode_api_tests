@@ -21,14 +21,14 @@ public class FetchSmokeTests {
 			pathParam("resource", "todos").
 			pathParam("resource", "users").
 		when().
-			get("/{resource}")
-		.then()
-			.assertThat().
+			get("/{resource}").
+			then().
+			assertThat().
 			statusCode(200).
 		and().
 			contentType(ContentType.JSON).
-		and()
-			.body("size()", greaterThan(5));
+		and().
+			body("size()", greaterThan(5));
 	}
 
 	@Test
@@ -42,14 +42,14 @@ public class FetchSmokeTests {
 			pathParam("resource", "todos").
 			pathParam("resource", "users").
 		when().
-			get("/{resource}/1")
-		.then().
+			get("/{resource}/1").
+		then().
 			assertThat().
 			statusCode(200).
-		and()
-			.contentType(ContentType.JSON)
-		.and()
-			.body("isEmpty()", is(false));
+		and().
+			contentType(ContentType.JSON).
+		and().
+			body("isEmpty()", is(false));
 	}
 	
 	

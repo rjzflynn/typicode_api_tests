@@ -15,13 +15,13 @@ public class UpdateSmokeTests {
 	@Test
 	public void updatePostTest() {
 		Map<String,String> postUpdateBody = PostsUtils.updatePost();
-		given()
-			.baseUri(URIUtils.getBaseUri())
-			.contentType("application/json")
-			.body(postUpdateBody).
+		given().
+			baseUri(URIUtils.getBaseUri()).
+			contentType("application/json").
+			body(postUpdateBody).
 		when().
-			put("/posts/1")
-		.then().
+			put("/posts/1").
+			then().
 			assertThat().
 			statusCode(200).
 		and().

@@ -11,12 +11,12 @@ public class DeleteSmokeTests {
 	
 	@Test
 	public void deletePostTest() {
-		given()
-			.baseUri(URIUtils.getBaseUri())
-			.contentType("application/json").
+		given().
+			baseUri(URIUtils.getBaseUri()).
+			contentType("application/json").
 		when().
-			delete("/posts/1")
-		.then().
+			delete("/posts/1").
+			then().
 			assertThat().
 			statusCode(200).
 		and().
