@@ -4,10 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CommentUtils {
+	
+	private static final String NEW_COMMENT_POST_ID = "1";
 
 	public static Map<String, String> newComment() {
 		Map<String,String> comment =  new HashMap<String,String>();
-		comment.put("postId", "1");
+		comment.put("postId", NEW_COMMENT_POST_ID);
 		comment.put("name", "John Doe");
 		comment.put("email", "jd@gmail.com");
 		comment.put("body", "foo bar bar foo");
@@ -18,6 +20,10 @@ public class CommentUtils {
 		Map<String,String> comment =  new HashMap<String,String>();
 		comment.put("title", "only title");
 		return comment;
+	}
+	
+	public static String getNewCommentPostId() {
+		return NEW_COMMENT_POST_ID;
 	}
 
 }

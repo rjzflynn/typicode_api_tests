@@ -1,12 +1,9 @@
 package typicode_tests.smokeTests;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.containsString;
-
+import static org.hamcrest.Matchers.*;
 import java.util.Map;
-
 import org.junit.Test;
-
 import utils.CommentUtils;
 import utils.PostsUtils;
 import utils.URIUtils;
@@ -44,7 +41,9 @@ public class CreateSmokeTests {
 				assertThat().
 				statusCode(201).
 			and().
-				body(containsString(comment.get("body")));		
+				body(containsString(comment.get("body"))).
+			and().
+				body("postId",equalTo(CommentUtils.getNewCommentPostId()));
 		}
 		
 		//TODO :Create similar create resource test for  albums, todos ect.
