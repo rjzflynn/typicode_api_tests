@@ -1,0 +1,18 @@
+1) Expand the typicode_tests.smokeTests to test all resources
+2) Build tests for nested resources and filtering
+3) Parallelize the typicode_tests.smokeTests for speed
+4) Create package for each resource and expand all ( typicode_tests.commentsTests, typicode_tests.postsTests) ect.
+5) Create more scenatrio tests
+6) Make it so tests run in order -> Smokes Tests, then others. 
+
+
+* continue to build Postman Suite for convinence.
+
+* there is not working functinality like nested resources like 
+ http://jsonplaceholder.typicode.com/posts/1/comments contains all the comments.
+this apperars to be true for all resources.
+
+* more bugs: seems I can create a comment with no body.... 201 response
+
+
+* tests for edge/limit cases. content types, char limits, ect  
