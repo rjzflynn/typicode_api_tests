@@ -3,19 +3,14 @@ package typicode_tests.scenariosTests;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
-import io.restassured.http.ContentType;
-
 import java.util.Map;
-
 import org.junit.Test;
-
 import utils.CommentUtils;
 import utils.PostsUtils;
 import utils.URIUtils;
 
 public class ScenariosTests {
 	
-	// test create new Post, then create comment on that post, then fetch post, assert on the post
 
 	@Test
 	public void createNewPost_addCommentsToPost_fetchPost_assertOnTheCommentAndPost_test() {
@@ -35,8 +30,7 @@ public class ScenariosTests {
 		
 		
 		Map<String,String> comment = CommentUtils.newComment(postId);
-		int commentId =
-				
+		int commentId =			
 		given().
 			baseUri(URIUtils.getBaseUri()).
 			contentType("application/json").
