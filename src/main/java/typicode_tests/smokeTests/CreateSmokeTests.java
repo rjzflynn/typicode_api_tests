@@ -43,7 +43,7 @@ public class CreateSmokeTests {
 			and().
 				body(containsString(comment.get("body"))).
 			and().
-				body("postId",equalTo(CommentUtils.getNewCommentPostId()));
+				body("postId", equalTo(CommentUtils.getNewCommentPostId()));
 		}
 		
 		//TODO :Create similar create resource test for  albums, todos ect.

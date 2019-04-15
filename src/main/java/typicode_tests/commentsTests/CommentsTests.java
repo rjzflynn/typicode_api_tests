@@ -27,18 +27,4 @@ public class CommentsTests {
 			statusCode(400);	
 	}
 	
-	@Test
-	public void commentShouldAttachToPost() {
-		Map<String,String> comment = CommentUtils.invalidComment();
-		given().
-			baseUri(URIUtils.getBaseUri()).
-			contentType("application/json").
-			body(comment).
-		when().
-			post("/comments").
-		then().
-			assertThat().
-			statusCode(400);	
-	}
-
 }
