@@ -13,5 +13,11 @@ public class CommentUtils {
 		comment.put("body", "foo bar bar foo");
 		return comment;
 	}
+	
+	public static Map<String, String> invalidComment() {
+		Map<String,String> comment =  new HashMap<String,String>();
+		comment.put("title", "only title");
+		return comment;
+	}
 
 }
